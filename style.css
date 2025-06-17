@@ -441,3 +441,305 @@ body {
 .social-link:active {
   color: #34c7c7;
 }
+
+
+
+
+
+
+/* Responsive Design */
+
+/* Below 1200px (for smaller desktops and large tablets) */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%; /* 9px / 16px = 56.25% */
+  }
+
+  .header {
+    padding: 0 4rem;
+  }
+
+  .section {
+    padding: 7rem 4rem 6rem 4rem;
+  }
+
+  .hero {
+    gap: 6rem;
+    padding: 8rem 4rem;
+    width: 100%;
+  }
+
+  .primary-heading {
+    font-size: 5.2rem;
+    letter-spacing: -2px;
+  }
+
+  .hero-description {
+    margin: 2rem 0 4rem 0;
+  }
+
+  .about-description {
+    width: auto; /* Allow description to take full width */
+  }
+
+  .properties-card {
+    grid-template-columns: 1fr; /* Stack properties cards vertically */
+    gap: 2rem;
+    max-width: 60rem; /* Limit width for better readability */
+  }
+
+  .properties-img {
+    border-radius: 8px; /* Adjust border-radius for stacked layout */
+  }
+
+  .properties-right {
+    border-radius: 8px; /* Adjust border-radius for stacked layout */
+  }
+
+  .properties-container {
+    padding: 2rem;
+  }
+
+  .testimonial-box {
+    grid-template-columns: 1fr; /* Stack testimonials vertically */
+    gap: 2rem;
+  }
+
+  .testimonial-photo-box {
+    height: 20rem; /* Adjust testimonial image height */
+    width: 100%;
+  }
+
+  .testimonial-photo {
+    width: 100%; /* Ensure images fill their container */
+    object-fit: cover;
+  }
+
+  .contact-container {
+    width: 50rem; /* Adjust contact form width */
+    grid-template-columns: 1fr; /* Stack contact fields vertically */
+    grid-template-rows: auto;
+  }
+
+  .contact-house {
+    grid-column: auto; /* Remove grid-column span for stacked layout */
+  }
+
+  .footer {
+    grid-template-columns: 1fr; /* Stack footer sections */
+    gap: 4rem;
+    padding: 4rem;
+  }
+
+  .social-container {
+    margin-left: 0; /* Remove left margin for stacked footer */
+  }
+}
+
+/* Below 900px (for tablets) */
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%; /* 8px / 16px = 50% */
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .nav {
+    background-color: rgba(26, 52, 59, 0.95);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.8rem;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-links:link,
+  .nav-links:visited {
+    font-size: 3.2rem;
+  }
+
+  .btn-mobile-nav {
+    display: block; /* Show toggle button */
+    z-index: 9999;
+  }
+
+  .hero {
+    grid-template-columns: 1fr; /* Stack hero content */
+    padding: 8rem 3.2rem;
+    text-align: center;
+    height: auto; /* Allow hero section to adjust height */
+  }
+
+  .hero-img-container {
+    display: flex; /* Center the image */
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .hero-img {
+    height: auto; /* Allow image to scale proportionally */
+    max-width: 100%; /* Ensure image doesn't overflow */
+    border-radius: 10px; /* Adjust border-radius */
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .btn-properties,
+  .btn-contact {
+    margin-right: 0; /* Remove right margin for stacked buttons */
+    width: 80%; /* Make buttons wider */
+  }
+
+  .about-container {
+    grid-template-columns: 1fr; /* Stack about boxes */
+  }
+
+  .testimonial-container {
+    grid-template-columns: 1fr; /* Stack testimonial sections */
+  }
+
+  .testimonial-photo-box {
+    height: 25rem; /* Adjust testimonial image height */
+  }
+
+  .contact-container {
+    width: 90%; /* Make contact form wider */
+    padding: 0 2rem;
+  }
+
+  .footer {
+    padding: 3.2rem;
+  }
+
+  .footer-logo {
+    height: 9rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/* Below 550px (for mobile phones) */
+@media (max-width: 34.375em) {
+  html {
+    font-size: 43.75%; /* 7px / 16px = 43.75% */
+  }
+
+  .header {
+    padding: 0 2rem;
+  }
+
+  .section {
+    padding: 6rem 2rem 5rem 2rem;
+  }
+
+  .primary-heading {
+    font-size: 4.2rem;
+    letter-spacing: -1px;
+  }
+
+  .secondary-heading {
+    font-size: 3.6rem;
+  }
+
+  .ternary-heading {
+    font-size: 3.2rem;
+  }
+
+  .hero-description {
+    font-size: 1.7rem;
+  }
+
+  .hero-prices {
+    font-size: 1.8rem;
+  }
+
+  .hero-price {
+    font-size: 2.8rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.8rem;
+    padding: 1.4rem 2rem;
+  }
+
+  .about-box-description {
+    font-size: 1.5rem;
+  }
+
+  .properties-loc {
+    font-size: 1.6rem;
+  }
+
+  .properties-cards {
+    font-size: 1.3rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .properties-description {
+    font-size: 1.5rem;
+  }
+
+  .properties-list-links {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+
+  .properties-link {
+    text-align: center;
+  }
+
+  .testimonial-description {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-author {
+    font-size: 1.4rem;
+  }
+
+  .contact-input {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    padding: 3rem 2rem;
+  }
+
+  .footer-heading {
+    font-size: 2rem;
+  }
+
+  .copyright {
+    font-size: 1.3rem;
+  }
+
+  .social {
+    font-size: 1.6rem;
+  }
+
+  .address {
+    font-size: 1.5rem;
+  }
+
+  .social-link:link,
+  .social-link:visited {
+    font-size: 1.5rem;
+  }
+}
